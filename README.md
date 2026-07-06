@@ -36,12 +36,20 @@
 
 ---
 
-## 安装方式（WorkBuddy 用户任选其一）
+## 朋友怎么装这个技能
 
-- **SKILL.md 拖拽导入**：直接把 `SKILL.md` 拖入 WorkBuddy 聊天框
-- **Git 仓库直拉**：WorkBuddy 设置里粘贴本仓库地址
-- **ZIP 包手动导入**：从 GitHub 下载 ZIP 包后导入
-- **npx 命令**：`npx skills add iithink88/chrome-webbridge`
+仓库里的 `SKILL.md` 已经把官网与安装流程融进去了，朋友拿到后任选其一即可：
+
+1. **下载 `SKILL.md` 直接拖进 WorkBuddy 聊天框**
+   - 最轻量：只传一个文件，AI 自动识别为技能
+2. **把整个仓库文件夹放进 `~/.workbuddy/skills/`**
+   - 把本仓库 clone / 解压后，整个 `chrome-webbridge/` 目录移到 `~/.workbuddy/skills/` 下即可
+3. **用 npx 命令一键安装**
+   ```bash
+   npx skills add iithink88/chrome-webbridge@chrome-webbridge
+   ```
+
+装好之后，按 `SKILL.md` 里的「安装指引」下载 Kimi 桌面端 + 装浏览器扩展，然后对我说「操作谷歌浏览器打开 XX」，我就会自动走健康检查 + WebBridge 操控。
 
 ---
 
